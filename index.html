@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsani Project</title>
+  <link rel="stylesheet" href="./styles/tailwind.css">
+  <link rel="stylesheet" href="./styles/custom.css">
+</head>
+<body class="relative min-h-screen">
+  <div class="top-header">
+    <div class="px-4 pt-8">
+      <h1 class="text-center text18 font-bold mb-4">Gallery Kontak Pak Marsani</h1>
+      <div class="flex justify-center items-center mb-4 w-full">
+        <div class="flex items-center w-full pr-2 relative">
+          <input type="text" placeholder="Bidang atau orang yang ingin bapak cari..." class="w-full h-10 px-2 text-xs rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+        <div class="w-10 h-10 mx-auto" onclick="showFilterSearch()">
+          <button class="bg-primary rounded px-2 h-10 w-10 flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex overflow-x-scroll pl-4 category">
+      <button class="bg-primary py-2 px-4 font-bold text-xs rounded mr-2">
+        Teknologi
+      </button>
+      <button class="bg-primary py-2 px-4 font-bold text-xs rounded mr-2">
+        Teknologi
+      </button>
+      <button class="bg-primary py-2 px-4 font-bold text-xs rounded mr-2">
+        Teknologi
+      </button>
+      <button class="bg-primary py-2 px-4 font-bold text-xs rounded mr-2">
+        Teknologi
+      </button>
+    </div>
+  </div>
+  <div class="container px-4 mt-12">
+    <div class="flex justify-between">
+      <div class="text-sm font-bold">List Kontaknya ni Pak</div>
+      <div class="flex items-center">
+        <div class="text-xs text-gray-400 mr-1">ini aplikasi apa sih</div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+    </div>
+    <div class="mt-4">
+      <div class="flex mb-6">
+        <div class="w-12 h-12 mr-2">
+          <div class="w-12 h-12 bg-gray-500 rounded-full"></div>
+        </div>
+        <div class="border-b border-bottom-primary pb-4">
+          <div class="mx-1">
+            <div class="mb-4">
+              <h3 class="text18 font-bold mb-2">Bisa service AC bapak biar dingin kayak baru lagi</h3>
+              <div class="text-sm">Robert Pattinson</div>
+            </div>
+            <p class="text-sm mb-2">Pengalaman aku pake jasa pak Robert ni mantep banget, dia ngeservice AC saya cuman 10 menit udah rampung, sekarang AC saya dingin lagi, hehe</p>
+            <div class="mb-4 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+              <span class="text-xs">Jakarta, Tangerang</span>
+            </div>
+          </div>
+          <div class="flex">
+            <button class="w-full mx-1 bg-primary py-2 rounded text-xs font-bold">Share</button>
+            <button class="w-full mx-1 bg-primary py-2 rounded text-xs font-bold">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex mb-6">
+        <div class="w-12 h-12 mr-2">
+          <div class="w-12 h-12 bg-gray-500 rounded-full"></div>
+        </div>
+        <div class="border-b border-bottom-primary pb-4">
+          <div class="mx-1">
+            <div class="mb-4">
+              <h3 class="text18 font-bold mb-2">Bisa service AC bapak biar dingin kayak baru lagi</h3>
+              <div class="text-sm">Robert Pattinson</div>
+            </div>
+            <p class="text-sm mb-2">Pengalaman aku pake jasa pak Robert ni mantep banget, dia ngeservice AC saya cuman 10 menit udah rampung, sekarang AC saya dingin lagi, hehe</p>
+            <div class="mb-4 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+              <span class="text-xs">Jakarta, Tangerang</span>
+            </div>
+          </div>
+          <div class="flex">
+            <button class="w-full mx-1 bg-primary py-2 rounded text-xs font-bold">Share</button>
+            <button class="w-full mx-1 bg-primary py-2 rounded text-xs font-bold">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed z-10 bg-gray-500 bottom-0 w-full h-full pt-8 filter-search hidden">
+    <div class="relative w-full h-full overflow-y-scroll">
+      <div class="bg-white w-full absolute z-20 py-8 filter">
+        <div class="px-4">
+          <div class="mb-10">
+            <div class="font-bold text-sm mb-2">Ngurutin</div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="font-bold text-sm">Yang Deket Deket aja</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Paling Sering Dikontak</div>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg> -->
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Paling Banyak yang nge share</div>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg> -->
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="font-bold text-sm mb-2">Nyari Orang Bidang Apa nih Pak ?</div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="font-bold text-sm">Semuanya</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Teknologi</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Makanan/Minuman</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Service Elektronik</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Investor</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Yang Jual Barang Bekas</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Yang bisa MC</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Guru</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b">
+              <div class="text-gray-400 text-sm">Laundry</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center mb-8">
+        <span class="text-sm">Liat yang lain</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+
+      <div class="flex">
+        <button class="flex items-center justify-center text-sm border-primary w-full py-2 rounded ml-4 mr-2" onclick="showFilterSearch()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+          <span>Reset Filter</span>
+        </button>
+        <button class="text-sm font-bold bg-primary w-full py-2 rounded mr-4 ml-2" onclick="showFilterSearch()">Apply Filter</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showFilterSearch() {
+      document.querySelector('.filter-search').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>

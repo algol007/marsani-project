@@ -1,0 +1,13 @@
+{
+  "name": "marsani-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ady Rahmansyah",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "live-server": "^1.2.1",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16"
+  }
+}
